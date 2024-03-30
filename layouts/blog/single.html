@@ -38,6 +38,10 @@
         <div class="content">
           {{ .Content }}
         </div>
+
+        <div class="page-views page-views-center" style="display: flex; justify-content: center; margin-top: 40px">
+          <img src="http://hits.dwyl.com/{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}.svg" alt="페이지 조회 수">
+        </div>
         {{ partial "components/last-updated.html" . }}
         {{ .Scratch.Set "reversePagination" true }}
         {{ partial "components/pager.html" . }}
