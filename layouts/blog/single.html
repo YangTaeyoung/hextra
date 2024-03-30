@@ -38,6 +38,9 @@
         <div class="content">
           {{ .Content }}
         </div>
+        <div class="page-views page-views-center" style="display: flex; justify-content: center; margin-top: 40px">
+          <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FYangTaeyoung%2FYangTaeyoung.github.io{{ .Page.RelPermalink }}&count_bg=%23292D80&title_bg=%23555555&icon=github.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false"/>
+        </div>
         {{ partial "components/last-updated.html" . }}
         {{ .Scratch.Set "reversePagination" true }}
         {{ partial "components/pager.html" . }}
